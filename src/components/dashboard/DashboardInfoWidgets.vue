@@ -8,7 +8,7 @@
           <div class="stats">
             <div class="stats-number">
               <i class="ion ion-md-arrow-up text-primary stats-icon"></i>
-              2
+              16
             </div>
             <div class="stats-title">{{'dashboard.aquarios' | translate}}</div>
           </div>
@@ -21,7 +21,7 @@
           <div class="stats">
             <div class="stats-number">
               <i class="ion ion-md-arrow-down text-danger stats-icon"></i>
-              5K
+              5M
             </div>
             <div class="stats-title">{{'dashboard.camaroes' | translate}}</div>
           </div>
