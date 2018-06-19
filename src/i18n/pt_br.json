@@ -43,7 +43,11 @@
     "setupProfile": "Perfil de instalação",
     "teamMembers": "Membros da Equipe",
     "usersAndMembers": "Usuários & Membros",
-    "versions": "Versões"
+    "versions": "Versões",
+    "aquarios": "Aquarios",
+    "camaroes": "Camarões",
+    "funcionarios": "Funcionários",
+    "locais": "Locais"
   },
   "notificationsPage": {
     "alerts": {

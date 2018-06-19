@@ -23,22 +23,6 @@ export default new Router({
       redirect: { name: 'dashboard' }
     },
     {
-      name: 'separate-auth',
-      path: '/auth',
-      component: AuthLayout,
-      children: [
-        {
-          path: '/auth/login',
-          component: lazyLoading('auth/login/Login'),
-          default: true,
-        },
-        {
-          path: '/auth/signup',
-          component: lazyLoading('auth/signup/Signup')
-        },
-      ]
-    },
-    {
       name: 'Admin',
       path: '/admin',
       component: AppLayout,
@@ -50,61 +34,10 @@ export default new Router({
           default: true
         },
         {
-          name: 'statistics',
-          path: '/admin/statistics'
-        },
-        {
-          name: 'charts',
-          path: '/admin/statistics/charts',
-          component: lazyLoading('statistics/charts/Charts')
-        },
-        {
-          name: 'progress-bars',
-          path: '/admin/statistics/progress-bars',
-          component: lazyLoading('statistics/progress-bars/ProgressBars'),
-        },
-        {
-          name: 'forms',
-          path: '/admin/forms'
-        },
-        {
-          name: 'form-elements',
-          path: '/admin/forms/form-elements',
-          component: lazyLoading('forms/form-elements/FormElements')
-        },
-        {
-          name: 'form-wizard',
-          path: '/admin/forms/form-wizard',
-          component: lazyLoading('forms/form-wizard/FormWizard')
-        },
-        {
-          name: 'medium-editor',
-          path: '/admin/forms/medium-editor',
-          component: lazyLoading('forms/medium-editor/MediumEditor')
-        },
-        {
-          name: 'tables',
-          path: '/admin/tables',
-          component: lazyLoading('tables/Table')
-        },
-        {
-          name: 'ui-elements',
-          path: '/admin/ui'
-        },
-        {
-          name: 'typography',
-          path: '/admin/ui/typography',
-          component: lazyLoading('ui/typography/Typography')
-        },
-        {
-          name: 'buttons',
-          path: '/admin/ui/buttons',
-          component: lazyLoading('ui/buttons/Buttons')
-        },
-        {
-          name: 'notifications',
-          path: '/admin/ui/notifications',
-          component: lazyLoading('ui/notifications/Notifications')
+          name: 'aquarios',
+          path: '/admin/dashboard/aquarios',
+          component: lazyLoading('dashboard/Aquarios'),
+          default: true
         },
         {
           path: '/admin/ui/icons',

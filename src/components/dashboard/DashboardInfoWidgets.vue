@@ -1,69 +1,70 @@
 <template>
-  <div class="row dashboard-info-widgets">
-    <div class="col-md-6 col-xl-3">
+<div>
+      <h1>Dashboard</h1>
+        <div class="row dashboard-info-widgets">
+    <div class="col-md-6 col-xl-6">
       <vuestic-widget class="info-widget">
         <div class="info-widget-inner">
           <div class="stats">
             <div class="stats-number">
               <i class="ion ion-md-arrow-up text-primary stats-icon"></i>
-              59
+              2
             </div>
-            <div class="stats-title">{{'dashboard.elements' | translate}}</div>
+            <div class="stats-title">{{'dashboard.aquarios' | translate}}</div>
           </div>
         </div>
       </vuestic-widget>
     </div>
-    <div class="col-md-6 col-xl-3">
+    <div class="col-md-6 col-xl-6">
       <vuestic-widget class="info-widget">
         <div class="info-widget-inner">
           <div class="stats">
             <div class="stats-number">
               <i class="ion ion-md-arrow-down text-danger stats-icon"></i>
-              12
+              5K
             </div>
-            <div class="stats-title">{{'dashboard.versions' | translate}}</div>
+            <div class="stats-title">{{'dashboard.camaroes' | translate}}</div>
           </div>
         </div>
       </vuestic-widget>
     </div>
-    <div class="col-md-6 col-xl-3">
-      <vuestic-widget class="info-widget brand-danger">
-        <div class="info-widget-inner">
-          <div class="info-widget-inner has-chart">
-            <div class="stats">
-              <div class="stats-number">
-                425
-              </div>
-              <div class="stats-title">Commits</div>
-            </div>
-            <div class="chart-container">
-              <vuestic-progress-bar type="circle" ref="circleProgress" :colorName="'white'" :backgroundColorName="'danger'"
-                            :startColorName="'danger'"></vuestic-progress-bar>
-            </div>
-          </div>
-        </div>
-      </vuestic-widget>
-    </div>
-    <div class="col-md-6 col-xl-3">
-      <vuestic-widget class="info-widget brand-info">
+    <div class="col-md-6 col-xl-6">
+      <vuestic-widget class="info-widget">
         <div class="info-widget-inner">
           <div class="stats">
             <div class="stats-number">
-              <i class="ion ion-md-people stats-icon icon-wide"></i>
-              5
+              10
             </div>
-            <div class="stats-title">{{'dashboard.teamMembers' | translate}}</div>
+            <div class="stats-title">{{'dashboard.locais' | translate}}</div>
+          </div>
+        </div>
+      </vuestic-widget>
+    </div>
+    <div class="col-md-6 col-xl-6">
+      <vuestic-widget class="info-widget">
+        <div class="info-widget-inner">
+          <div class="stats">
+            <div class="stats-number">
+              <i class="ion ion-md-arrow-up text-primary stats-icon"></i>
+              550
+            </div>
+            <div class="stats-title">{{'dashboard.funcionarios' | translate}}</div>
           </div>
         </div>
       </vuestic-widget>
     </div>
   </div>
+</div>
+
 </template>
 
 <script>
   export default {
     name: 'dashboard-info-widgets',
-
+    data () {
+      return {
+      }
+    },
     mounted () {
       this.$refs.circleProgress.$data.value = 70
     }
